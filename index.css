@@ -1,15 +1,27 @@
+:root {
+  font-size: 0.7vw;
+}
+
 body {
   width: 100vw;
+  height: 100vh;
   margin: 0;
   padding: 0;
   color: #333333;
 }
 
 .container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
   padding: 3% 9% 2% 5%;
+  font-size: 2.4rem;
+  box-sizing: border-box;
 }
 .container img {
-  width: 40%;
+  width: 50%;
 }
 
 header {
@@ -18,28 +30,36 @@ header {
 
 main {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
 }
 
 section h1 {
   font-family: "space mono";
-  font-size: 64px;
+  font-size: 6.4rem;
 }
 section p {
   color: #4F4F4F;
   font-family: "space mono";
   font-weight: 400;
-  width: 40%;
+  width: 70%;
 }
 section button {
   background-color: #333333;
   color: white;
   font-family: "space mono";
+  font-size: 1.4rem;
   border: 0;
   padding: 20px;
   cursor: pointer;
 }
 section button:hover {
   background-color: #333333e8;
+}
+
+footer {
+  font-family: "monserrat";
+  font-size: 1.4rem;
+  color: #BDBDBD;
+  text-align: center;
 }/*# sourceMappingURL=index.css.map */
