@@ -114,5 +114,8 @@ footer {
             flex-direction: column;
     gap: 0;
   }
+  footer {
+    padding: 3rem;
+  }
 }
 /*# sourceMappingURL=index.css.map */
