@@ -1,5 +1,5 @@
-:root {
-  font-size: 0.7vw;
+html {
+  font-size: calc(max(0.7vw, 4px));
 }
 
 body {
@@ -11,17 +11,30 @@ body {
 }
 
 .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: 100%;
   width: 100%;
-  flex-direction: column;
-  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 3% 9% 2% 5%;
   font-size: 2.4rem;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
+
 .container img {
-  width: 50%;
+  width: 40%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 header {
@@ -29,21 +42,30 @@ header {
 }
 
 main {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10%;
 }
 
 section h1 {
   font-family: "space mono";
   font-size: 6.4rem;
 }
+
 section p {
   color: #4F4F4F;
   font-family: "space mono";
   font-weight: 400;
   width: 70%;
 }
+
 section button {
   background-color: #333333;
   color: white;
@@ -53,13 +75,15 @@ section button {
   padding: 20px;
   cursor: pointer;
 }
+
 section button:hover {
   background-color: #333333e8;
 }
 
 footer {
-  font-family: "monserrat";
+  font-family: Montserrat;
   font-size: 1.4rem;
   color: #BDBDBD;
   text-align: center;
-}/*# sourceMappingURL=index.css.map */
+}
+/*# sourceMappingURL=index.css.map */
